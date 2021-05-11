@@ -1,0 +1,32 @@
+{
+  "name": "pb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon .",
+    "db:migrate": "./node_modules/.bin/sequelize db:migrate",
+    "db:undo": "./node_modules/.bin/sequelize db:migrate:undo",
+    "db:new": "./node_modules/.bin/sequelize migration:create --name"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^15.0.2",
+    "@types/sequelize": "^4.28.9",
+    "amqplib": "^0.7.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.4.0",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "sequelize-cli": "^6.2.0"
+  }
+}
